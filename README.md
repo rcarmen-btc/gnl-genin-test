@@ -7,5 +7,7 @@ $ cd gnl-genin-test
 ```
 Copy your gnl sorce files in ```src``` and
 ```
-$ make all
+$ make dattebayo
 ```
+
+![alt text](orig.jpeg "Title")
