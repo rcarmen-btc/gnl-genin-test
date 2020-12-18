@@ -18,7 +18,7 @@ BUF = -D BUFFER_SIZE=
 
 CC = gcc
 
-all: usual2 zero2 usual128 zero128 usual4096 zero4096
+dattebayo: usual2 zero2 usual128 zero128 usual4096 zero4096
 
 usual2: $(SRCS) $(TESTS_SRC_USUAL) $(MAKEFILE) 
 	@echo " )==========================================================================================================================================================("
