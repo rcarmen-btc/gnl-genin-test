@@ -1,6 +1,6 @@
 # gnl-genin-test
 
-##Quick start
+## Quick start
 
 ```
 $ git clone https://github.com/rcarmen-btc/gnl-genin-test.git 
