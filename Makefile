@@ -10,7 +10,7 @@ TESTS_SRC_USUAL = ./test/test_usual_case.c\
 
 TESTS_SRC_FD = ./test/test_zero_fd.c\
 
-FILES = 1-angel 2-girl 3-totoro 9-lum-chan 4-empty 5-newlines 6-line-1 6-line-2 7-lines 8-tolstoy.txt \
+FILES = 1-angel 2-girl 3-totoro 9-lum-chan 4-empty 5-newlines 6-line-1 6-line-2 7-lines \
 
 FLAGS = -Wall -Werror -Wextra
 
@@ -42,7 +42,6 @@ zero2: $(SRCS) $(TESTS_SRC_USUAL) $(MAKEFILE) $(ANSWERS)
 	@./$(NAME) < 6-line-2 >> res-test-zero
 	@./$(NAME) < 7-lines >> res-test-zero
 	@./$(NAME) < 9-lum-chan >> res-test-zero
-	@./$(NAME) < 8-tolstoy.txt >> res-test-zero
 	@diff -u res-test-zero ./answers/ans-test-zero > diffs-zero && bash massage.sh || bash error.sh && cat diffs-zero
 	@bash end.sh
 
@@ -66,7 +65,6 @@ zero128: $(SRCS) $(TESTS_SRC_USUAL) $(MAKEFILE) $(ANSWERS)
 	@./$(NAME) < 6-line-2 >> res-test-zero
 	@./$(NAME) < 7-lines >> res-test-zero
 	@./$(NAME) < 9-lum-chan >> res-test-zero
-	@./$(NAME) < 8-tolstoy.txt >> res-test-zero
 	@diff -u res-test-zero ./answers/ans-test-zero > diffs-zero && bash massage.sh || bash error.sh && cat diffs-zero
 	@bash end.sh
 
@@ -90,6 +88,5 @@ zero4096: $(SRCS) $(TESTS_SRC_USUAL) $(MAKEFILE) $(ANSWERS)
 	@./$(NAME) < 6-line-2 >> res-test-zero
 	@./$(NAME) < 7-lines >> res-test-zero
 	@./$(NAME) < 9-lum-chan >> res-test-zero
-	@./$(NAME) < 8-tolstoy.txt >> res-test-zero
 	@diff -u res-test-zero ./answers/ans-test-zero > diffs-zero && bash massage.sh || bash error.sh && cat diffs-zero
 	@bash end.sh
